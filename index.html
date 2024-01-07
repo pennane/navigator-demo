@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>navigator</title>
+</head>
+
+<body>
+  <div id="app">
+    <div id="canvas-container"></div>
+    <div id="controls">
+      <div id="controls-mode">
+        <h3>move mode</h3>
+        on / off
+        <input id="mode-toggle" type="checkbox" checked>
+      </div>
+      <div id="controls-new-node">
+        <h3>add new node</h3>
+        <div>
+          <span>name</span>
+          <input type="text" id="new-node-name" value="">
+        </div>
+        <div>
+          <span>x</span>
+          <input type="number" id="new-node-x" value="0">
+        </div>
+        <div>
+          <span>y</span>
+          <input type="number" id="new-node-y" value="0">
+        </div>
+        <div>
+          <span>has traffic lights</span>
+          <input type="checkbox" id="new-node-traffic">
+        </div>
+        <br>
+        <button id="new-node-add">add</button>
+      </div>
+      <div id="controls-connections">
+        <h3>Selected node</h3>
+        <div id="selected-node">
+          ..
+        </div>
+      </div>
+      <div id="controls-export">
+        <h3>Export graph</h3>
+        <button id="export">export</button>
+        <br>
+        <br>
+        <textarea id="output"></textarea>
+      </div>
+
+
+    </div>
+    <br><br><br><br><br><br><br>
+  </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
